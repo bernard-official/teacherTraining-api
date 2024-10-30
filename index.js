@@ -11,7 +11,7 @@ const port = process.env.PORT || 3001;
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv://agent-007:delase@cluster0.ejg5rih.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    process.env.MONGODB_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
